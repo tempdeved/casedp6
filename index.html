@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XVDK82KPSF"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-XVDK82KPSF');
+    </script>
+
     <meta charset="UTF-8">
     <title>DP6 Case - Prova Técnica</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -53,12 +64,12 @@
             </ul>
         </li>
         <li class="menu-lista-item">
-            <a href="http://www.dp6.com.br/contato/" target="_blank" class="menu-lista-link menu-lista-contato" onClick="tag_link_externo">
+            <a href="http://www.dp6.com.br/contato/" target="_blank" class="menu-lista-link menu-lista-contato" onClick="tag_link_externo()">
                 Entre em Contato
             </a>
         </li>
         <li class="menu-lista-item">
-            <a href="http://autos.dp6.com.br/autos_revista_vfinal.pdf" class="menu-lista-link menu-lista-download" target="_pdf" onClick="tag_download_pdf">
+            <a href="http://autos.dp6.com.br/autos_revista_vfinal.pdf" class="menu-lista-link menu-lista-download" target="_pdf" onClick="captureOutboundLink('http://autos.dp6.com.br/autos_revista_vfinal.pdf'); return false;"">
             Download PDF</a>
         </li>
     </ul>
