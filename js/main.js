@@ -72,7 +72,6 @@
       }, 200);
     }, Math.random() * 2000);
   })
-  enviado();
 
   jQuery(
     '.menu-lista-' +
