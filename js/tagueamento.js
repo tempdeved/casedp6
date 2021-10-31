@@ -3,39 +3,7 @@
 // Manager. No último caso, não é necessário implementar a tag <noscript>.
 // O ambiente dispõe da jQuery 3.5.1, então caso deseje, poderá utilizá-la
 // para fazer a sua coleta.
-// Caso tenha alguma dúvida sobre o case, não hesite em entrar em contato.
-
-
-// <!-- Global site tag (gtag.js) - Google Analytics -->
-// <script async src="https://www.googletagmanager.com/gtag/js?id=G-XVDK82KPSF"></script>
-// <script>
-//   window.dataLayer = window.dataLayer || [];
-//   function gtag(){dataLayer.push(arguments);}
-//   gtag('js', new Date());
-
-//   gtag('config', 'G-XVDK82KPSF');
-// </script>
-
-(function (i, s, o, g, r, a, m) {
-i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-    (i[r].q = i[r].q || []).push(arguments)
-}, i[r].l = 1 * new Date(); a = s.createElement(o),
-    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-})(window, document, 'script', 'https://www.googletagmanager.com/gtag/js?id=G-XVDK82KPSF', 'ga');
-
-ga('config', 'G-XVDK82KPSF');
-ga('send', 'pageview');
-
-// (function (i, s, o, g, r, a, m) {
-// i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-//     (i[r].q = i[r].q || []).push(arguments)
-// }, i[r].l = 1 * new Date(); a = s.createElement(o),
-//     m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-// })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-// ga('create', 'UA-12345-6', 'auto');
-// ga('send', 'pageview');
-
+// Caso tenha alguma dúvida sobre o case, não hesite em entrar em contato
 
 function tag_link_externo() {
     ga('send', 'event', 'menu', 'entre_em_contato', 'link_externo');
@@ -71,11 +39,3 @@ function tag_telefone_form() {
 function enviado(){
     ga('send', 'event', 'contato', 'enviado', 'enviado');
 }
-
-var captureOutboundLink = function(url) {
-    ga('send', 'event', 'menu', 'download_pdf', 'download_pdf', {
-      'transport': 'beacon',
-      'hitCallback': function(){document.location = url;}
-    });
-    console.log(url )
- }
